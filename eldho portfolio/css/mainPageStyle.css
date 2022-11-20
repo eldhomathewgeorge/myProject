@@ -1,6 +1,30 @@
 
 /* start navigation */
+.navbar-brand img{
+    height:40px ;
+    padding-left: 15px;
+}
 
+.navUl{
+    margin-left: auto;
+}
+
+.navUl a{
+    color:black;
+}
+.navUl a:hover{
+    color:black;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.navUl a:active{
+    color: white;
+    background-color: black;
+
+
+ 
+}
 
 
 /* end navigation */
@@ -8,11 +32,14 @@
 
 /* BANNER AREA START */
 .bannerContainer{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-top: 50px;
+
+
+    
 }
 .bannerContainer h3{
-    display: inline; 
+    display: inline;
     vertical-align: top ;
     
     
@@ -21,7 +48,14 @@
     font-size: 37pt;
 }
 .nameBox{
-    padding: 150px 10px 10px 10px;
+  height: 200px;
+  margin-top: 20%;
+  
+}
+.innerNameBox{
+    margin-left: 20%;
+    width: 280px;
+    text-align: left;
 }
 .lineDiv{
     border:1px solid black;
@@ -30,28 +64,42 @@
     height: 2px;
     display: inline-block
 }
+.bammerImgBox{
+    text-align: center;
+}
 .bannerContainer img{
-    padding: 20px 50px 5px 10px; 
-    width: 430px;
+    
+    width: 380px;
 }
 /* BANNER AREA END */
 
 
 /* ABOUT AREA START */
+.aboutImgBox{
+    text-align: center;
+    
+
+}
 .aboutImg{
-    padding: 20px 10px 5px 0px; 
-    width: 400px;
+    margin: 0;
+    margin-top: 10%;
+    width: 80%;
+    
 }
 .introduceDiv{
     width: 150px
 }
-.anoutDetailsDiv{
-    padding: 15px;
+.aboutDetailsDiv{
+    margin: 10%;
+    width: 80%;
 }
 /* ABOUT AREA END  */
 
 
 /* SKILL AREA START */
+#skill{
+    margin-top: 50px;
+}
 
 .skillHeading{
     text-align:center;
@@ -81,15 +129,22 @@
  .contactContainer{
     height: 200px;; text-align:center; 
     padding: 20px;
+    margin:100px 0px;
+   
  }
  .contactContainer h2{
    margin:25px;
  }
+
  .contactContainer a{
     text-decoration:none;
     margin: 15px;
     text-align: center;
 
+ }
+ .contact{
+    margin-top: 25px;
+    margin-bottom: 25px;
  }
  
 .contactLogo{
@@ -97,3 +152,25 @@
     
 }
 /* CONTACT AREA END */
+
+/* SCROLL UP BUTTON START */
+
+#scrol{
+    
+    position:fixed;
+    right:25px;bottom:25px;
+    border-width:5px;
+    height:50px;width:50px;
+    border-radius:50px;
+    font-size:25pt;
+    opacity:0.8;
+    color: black;
+    
+}
+#scrol a{
+    text-decoration:none;
+    color: black;
+    font-weight: 800;
+    opacity:0.5;
+}
+/* SCROLL UP BUTTON END */

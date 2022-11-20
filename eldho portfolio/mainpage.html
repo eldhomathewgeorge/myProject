@@ -13,50 +13,88 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-  <!--css integraton-->
+  <!--custom css integraton-->
   <link rel="stylesheet" href="css/mainPageStyle.css" />
 </head>
 
 <body>
+
+
+  <!-- NAVIGATION AREA START -->
+
+  <nav class="navbar navbar-expand-md " id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo/mainLogo3.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ml-auto " id="navbarNav">
+        <ul class="navbar-nav navUl">
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#banner">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link " href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  <!-- NAVIGATION AREA END -->
+
+
   <!--BANNER AREA START-->
-  <div class="container bannerContainer">
+  <div class="container bannerContainer" id="banner">
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="nameBox">
-          <h3 class="h1">Hey</h3>
-          <div class="lineDiv"></div>
-          <h1>I AM ELDHO</h1>
-          <h5>FULL STACK WEB DEVELOPER</h5>
-          <a class="btn btn-md btn-primary" href="mailto:eldhomg123@gmail.com?subject=You are hired"
-            target="_blank">HIRE ME
-          </a>
+          <div class="innerNameBox">
+            <h3 class="h1">Hey</h3>
+            <div class="lineDiv"></div>
+            <h1>I AM ELDHO</h1>
+            <h5>FULL STACK WEB DEVELOPER</h5>
+            <a class="btn btn-md btn-primary" href="mailto:eldhomg123@gmail.com?subject=You are hired"
+              target="_blank">HIRE ME
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <img src="images/home.jpg" alt="home image">
+      <div class="col-md-6 col-sm-12 bammerImgBox">
+        <img src="images/home2.jpg" alt="home image">
       </div>
     </div>
   </div>
   <!--BANNER AREA END-->
 
   <!-- ABOUT AREA START -->
-  <div class="container">
+  <div class="container-fluid" id="about">
     <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <img src="images/about.png" class="aboutImg" alt="about image">
+      <div class="col-md-6 col-sm-12 aboutImgBox">
+        <img src="images/about2.jpg" class="aboutImg" alt="about image">
       </div>
-      <div class="col-md-6 col-sm-12 anoutDetailsDiv">
-        <div class="introduceDiv">
-          <h2> LET ME INTRODUCE MYSELF </h2>
+      <div class="col-md-6 col-sm-12">
+        <div class="aboutDetailsDiv">
+          <div class="introduceDiv">
+            <h2> LET ME INTRODUCE MYSELF </h2>
+          </div>
+          <p class="text-wrap">Goal oriented front end web developer with thorough knowledge of the basic languages.
+            I make it my goal to create websites with the user in mind,
+            creating applications with a usable and intuitive user interface experience.
+            I also understand the importance of creating highly readable and easily maintainable source code.
+            I am constantly striving to learn new technologies and look to ways to better myself in this rapidly
+            changing
+            industry.
+          </p>
+          <a href="pdf/cv.pdf" target="_blank" class="btn btn-md btn-success">GET CV</a>
         </div>
-        <p class="text-wrap">Goal oriented front end web developer with thorough knowledge of the basic languages.
-          I make it my goal to create websites with the user in mind,
-          creating applications with a usable and intuitive user interface experience.
-          I also understand the importance of creating highly readable and easily maintainable source code.
-          I am constantly striving to learn new technologies and look to ways to better myself in this rapidly changing
-          industry.
-        </p>
-        <a href="pdf/cv.pdf" target="_blank" class="btn btn-md btn-success">GET CV</a>
       </div>
     </div>
 
@@ -65,10 +103,10 @@
   <!-- ABOUT AREA END -->
 
   <!-- SKILL AREA START -->
-  <div class="container">
+  <div class="container" id="skill">
     <div class="row ">
       <div class="col-sm-12 ">
-        <h2 class="skillHeading">SILLS</h2>
+        <h2 class="skillHeading">SKILLS</h2>
         <p class="skillPara">I am good at following web developemet languages, lobraries and framework </p>
       </div>
     </div>
@@ -143,27 +181,33 @@
     <!-- SKILL AREA END -->
 
     <!-- CONTACT AREA START -->
-    <div class="container contactContainer">
+    <div class="container contactContainer" id="contact" >
       <h2>CONTACT ME</h2>
       <div class="row ">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12 contact">
           <div>
             <h5>EMAIL</h5>
             <a href="mailto:eldhomg123@gmail.com?subject=You are hired">eldhomg123@gmail.com</a>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12 contact">
           <h5>SOCIAL MEDIA</h5>
           <a href="https://www.facebook.com/eldhomathew.george" target="_blank"><img class="contactLogo"
               src="images/logo/fb.png" alt="facebook logo"></a>
           <a href="https://www.linkedin.com/in/eldhomathewgeorge" target="_blank"><img class="contactLogo"
               src="images/logo/ln.png" alt="linkedin logo"></a>
-              <a href="https://www.instagram.com/eldhomg123/" target="_blank"><img class="contactLogo"
-                src="images/logo/insta.png" alt="Instagram logo"></a>
+          <a href="https://www.instagram.com/eldhomg123/" target="_blank"><img class="contactLogo"
+              src="images/logo/insta.png" alt="Instagram logo"></a>
         </div>
       </div>
     </div>
     <!-- CONTACT AREA END -->
+
+    <!-- SCROLL UP BUTTON START -->
+    <button id='scrol'><a href="#nav">^</a></button>
+    <!-- SCROLL UP BUTTON END -->
+
+
 </body>
 
 </html>
